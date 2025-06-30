@@ -6,55 +6,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <title>Saas</title>
 </head>
 <body class="bg-black font-instrument ">
   
-  <div class="bg-linear-to-b from-black to-[#7370FF] text-white h-[194vh] w-full ">
+  <div class="bg-linear-to-b from-black to-[#7370FF] text-white h-[93vh] lg:h-[194vh] ">
     <!-- Hero Section -->
     <div class="">
       <!-- Navigation Bar -->
-      <nav class="w-[100%] bg-black flex flex-row justify-between pl-[120px] pt-[30px] px-[8rem] p-[20px]">
-          <div> <img src="/asset/Div [flex].png" alt="" class="w-[5rem]"></div>
-          <div class="flex flex-row gap-[2rem] justify-center items-center">
-              <a href="pricing.html" class=" text-white hover:border-b border-b-white cursor-pointer" > Community </a>
-              <a href="roadmap.html" class=" text-white hover:border-b border-b-white cursor-pointer"> Roadmap</a>
-              <a href="pricing.html" class=" text-white hover:border-b border-b-white cursor-pointer"> Pricing </a>
-              <a href="login.html" class="bg-white text-black px-[1.2rem] py-[0.5rem] text-center text-sm rounded-xl hover:bg-gradient-to-b from-indigo-600 to-indigo-900 hover:text-amber-300"> Log-in </a>
-              <a href="terms.html" class="bg-gradient-to-b from-indigo-600 to-indigo-900 text-white px-[1.2rem] py-[0.5rem] text-center rounded-xl hover:bg-gradient-to-b hover:from-purple-600 hover:to-indigo-800 hover:text-amber-300"> Get started </a>
+      <!-- <nav class=" bg-black lg:px-32 md:px-16 lg:py-4 px-2 pl-8 pr-8 md:flex  flex-row lg:justify-between lg:items-center items-center ">
+          <div> <img src="/asset/Div [flex].png" alt="" class="lg:w-[5rem] w-[3.5rem] "></div>
+          <div class="flex flex-row gap-[0.5rem] lg:gap-[2rem] justify-center items-center">
+              <a href="pricing.html" class=" text-white hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px] lg:block hidden" > Community </a>
+              <a href="terms.html" class=" text-white hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]"> Roadmap</a>
+              <a href="pricing.html" class=" text-white hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]"> Pricing </a>
+
+              
+              <a href="login.html" class="bg-white text-black lg:auto lg:px-[1.2rem] lg:py-[0.5rem] px-[1.2rem] py-[0.3rem] text-center text-[10px] lg:text-sm rounded-[5px] lg:rounded-xl hover:bg-gradient-to-b from-indigo-600 to-indigo-900 hover:text-amber-300"> Log-in </a>
+              <a href="login.html" class="bg-gradient-to-b from-indigo-600 to-indigo-900 text-white lg:px-[1.2rem] lg:py-[0.5rem] px-[1.2rem] py-[0.3rem] text-center lg:text-sm text-[10px] rounded-[5px] lg:rounded-xl hover:bg-gradient-to-b hover:from-purple-600 hover:to-indigo-800 hover:text-amber-300"> Get started </a>
           </div>
+      </nav> --> 
+
+      <nav class="bg-black lg:px-32 md:px-16 lg:py-4 px-2 pl-8 pr-8 flex lg:flex-row justify-between items-center">
+        <div>
+            <img src="/asset/Div [flex].png" alt="" class="w-14 lg:w-20 pt-5">
+        </div>
+        <div class="lg:hidden">
+            <button id="menu-btn" class="text-white pt-5">
+                <!-- Menu Icon -->
+                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Close Icon -->
+                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div id="nav-links" class="hidden flex-col  gap-10 absolute top-16 left-0 right-0 bottom-0 w-full bg-black pt-8 pb-8 pr-4 pl-4 lg:static lg:flex lg:flex-row lg:gap-8 lg:bg-transparent lg:w-auto lg:py-0">
+           <div class="flex lg:flex-row flex-col lg:gap-10 gap-20 items-center">
+            <a href="pricing.html" class="text-white hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]">Community</a>
+            <a href="terms.html" class="text-white hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]">Roadmap</a>
+            <a href="pricing.html" class="text-white hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]">Pricing</a>
+            <a href="login.html" class="bg-white text-black lg:px-4 lg:py-2 px-10 py-2 text-center text-[12px] lg:text-sm rounded-md hover:bg-gradient-to-b from-indigo-600 to-indigo-900 hover:text-amber-300">Log-in</a>
+            <a href="login.html" class="bg-gradient-to-b from-indigo-600 to-indigo-900 text-white lg:px-4 px-6 py-2 text-center text-[12px] lg:text-sm rounded-md hover:bg-gradient-to-b hover:from-purple-600 hover:to-indigo-800 hover:text-amber-300">Get started</a>
+           </div>
+        </div>
       </nav>
+    
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+    </script>
   
       <!-- Content on the Hero Section -->
-       <div class="text-5xl text-center text-white mt-[40px] animate-pulse duration-1000 delay-200 hover:text-blue-100 cursor-pointer"> The Visual Website Builder <br> for Node.js & Tailwind</div>
-      <p class="mt-[30px] text-sm text-center"> Build at the speed of no-code. Export a Next.js, Tailwind <br> and Shacon UI app.
+       <div class="text-[25px] font-semibold lg:text-5xl text-center text-white pt-[100px] lg:mt-[40px] hover:text-blue-100 cursor-pointer"> The Visual Website Builder <br> for Node.js & Tailwind</div>
+      <p class="lg:mt-[30px] mt-[10px] text-[12px] lg:text-sm text-center"> Build at the speed of no-code. Export a Next.js, Tailwind <br> and Shacon UI app.
       Customize without limits. </p>
       </div>
   
       <button class="bg-gradient-to-b from-[#9C99FF] to-[#7370FF] block mx-auto mt-10 text-white px-[1.8rem] pt-[0.7rem] pb-[0.8rem] text-center rounded-xl"> Build your site > </button>
       <div class=""> <img src="/asset/Div [relative].png" alt="" class="mt-7 w-[10rem] h-auto block mx-auto"></div>
-      <div> <img src="/asset/Video [rounded-md].png" alt="" class="block mx-auto mt-20"></div>
+      <div> <img src="/asset/Video [rounded-md].png" alt="" class="block mx-auto mt-20 w-[21rem] h-[auto] lg:block lg:mx-auto lg:mt-20 lg:w-auto lg:h-auto "></div>
   </div>
   <div>
-    <p class="pt-30 text-white text-center text-4xl"> Visual editing, built for developers </p>
-    <p class="mt-5 text-white text-center text-sm font-thin"> No need to learn new mental models and framework <br> it feels like editing code but visually </p>
-    <div class="flex gap-20 ml-40  mt-40">
-      <img src="/asset/Div [h-[420px]] (1).png" alt="">
-      <img src="/asset/Div [h-[420px]].png" alt="">
+    <p class="lg:mt-60 mt-[5rem] w-[15rem] lg:w-[60rem] text-white block mx-auto font-semibold text-center text-[24px] lg:text-4xl"> Visual editing, built for developers </p>
+    <p class="mt-5 text-white text-center text-[12px] lg:text-sm font-thin"> No need to learn new mental models and framework <br> it feels like editing code but visually </p>
+    <div class="flex justify-center flex-col ml-10 mt-10 gap-10 lg:flex-row lg:gap-20 lg:ml-10  lg:mt-40 ">
+      <img src="/asset/Div [h-[420px]] (1).png" class=" lg:w-[30rem] h-auto w-[18rem]"  alt="">
+      <img src="/asset/Div [h-[420px]].png"  class="lg:w-[30rem] h-auto w-[18rem]">
     </div>
     <!-- <img src="/asset/Div [hidden].png" alt="" class="relative top-[220px] left-170" > -->
   </div>
 
   <div>
-    <h2 class="text-4xl text-white ml-[9rem] mt-[6rem]"> Build fast. Stay Flexible </h2>
-    <div class="flex gap-70">
+    <h2 class=" text-3xl mt-[4rem] text-center lg:text-4xl text-white lg:ml-[9rem] lg:mt-[6rem] lg:text-left"> Build fast. Stay flexible </h2>
+    <div class="flex flex-col gap-20 lg:flex-row lg:gap-70">
       <!-- Left Hand Side -->
-      <div class="text-white ml-[9rem] mt-[3rem] flex flex-col gap-10">
+      <div class="text-white ml-[2rem] gap-5 lg:ml-[9rem] mt-[3rem] flex flex-col lg:gap-10">
         <div>
           <h4> Visual Builder </h4>
-          <p class="font-[500] text-[10px] pt-2 text-gray-400"> 
+          <p class="font-[500] text-sm lg:text-[10px] pt-2 text-gray-400"> 
             Edit Tailwind & Shadcn UI components with a visual 
             <br> builder and see your changes in real-time.
           </p>
@@ -62,7 +105,7 @@
         
         <div>
           <h4> Code Export </h4>
-          <p class="font-[500] text-[10px] pt-2 text-gray-400"> 
+          <p class="font-[500] text-sm  lg:text-[10px] pt-2 text-gray-400"> 
             Export a quality Next.js codebase. Customize <br>
             without limits and host anywhere.
           </p>
@@ -70,7 +113,7 @@
         
         <div>
           <h4> Pre-made template </h4>
-          <p class="font-[500] text-[10px] pt-2 text-gray-400">
+          <p class="font-[500] text-sm lg:text-[10px] pt-2 text-gray-400">
             Get started quickly with beautifully designed <br>
             blocks and templates.
           </p>
@@ -78,7 +121,7 @@
         
         <div>
           <h4> AI-generated Theme </h4>
-          <p class="font-[500] text-[10px] pt-2 text-gray-400">
+          <p class="font-[500] text-sm lg:text-[10px] pt-2 text-gray-400">
           Generate beautiful themes and color palettes from <br>
           a prompt.
           </p>
@@ -86,19 +129,19 @@
         
       </div>
       <!-- right hand side image -->
-       <div> <img src="/asset/Video [rounded-sm] (1).png" class="w-[32rem] h-auto mt-20" alt=""></div>
+       <div> <img src="/asset/Video [rounded-sm] (1).png" class="w-[20rem] block mx-auto lg:w-[32rem] mt-1 h-auto lg:mt-20" alt=""></div>
     </div>
   </div>
   <!-- What people are saying -->
-   <div class="text-center mt-40 text-white text-4xl"> What People are saying </div>
+   <div class="text-center mt-40 text-white text-2xl lg:text-4xl"> What People are saying </div>
    <p class="font-[500] text-[14px] pt-2 text-gray-400 text-center"> Thousands of developers and teams love Reweb </p>
 
    <!-- The grid -->
-  <div class="flex ml-[15rem] mr-[15rem] mt-20 justify-center gap-5">
+  <div class="flex flex-col ml-10 mr-10 lg:flex-row lg:ml-[15rem] lg:mr-[15rem] mt-5 lg:mt-20 justify-center gap-5">
     <!-- Left Row -->
-    <div class="flex flex-col gap-5">
+    <div class="flex flex-col lg:flex-col gap-5">
       <!-- Box-1 -->
-      <div class="bg-[#212121] px-10 py-10 rounded-2xl"> 
+      <div class="bg-[#212121] px-5 py-5 lg:px-10 lg:py-10 rounded-2xl"> 
         <p class="text-white text-xs"> 
           It practically solves every issue I have <br>
           with Webflow and Framer. This is so much <br>
@@ -108,14 +151,14 @@
         <div class="flex flex-row mt-10 gap-5 items-center">
           <img src="/asset/Image [rounded-full].png" class="w-auto h-[1.5rem]" alt="">
           <div class="flex flex-col ">
-            <h6 class="text-white text-[10px]"> Jaiden Lee</h6>
-            <p class="text-gray-400 text-[9px]"> @buildjaden </p>
+            <h6 class="text-white text-sm lg:text-[10px]"> Jaiden Lee</h6>
+            <p class="text-gray-400 text-xs lg:text-[9px]"> @buildjaden </p>
           </div>
         </div>
       </div>
   
       <!-- Box-2 -->
-      <div class="bg-[#212121] px-10 py-10 rounded-2xl"> 
+      <div class="bg-[#212121] px-5 py-5 lg:px-10 lg:py-10 rounded-2xl"> 
         <p class="text-white text-xs"> 
           This look really freaking cool!!
         </p>
@@ -123,14 +166,14 @@
         <div class="flex flex-row mt-10 gap-5 items-center">
           <img src="/asset/Image [rounded-full] (1).png" class="w-auto h-[1.5rem]" alt="">
           <div class="flex flex-col">
-            <h6 class="text-white text-[10px]"> James Q Quick</h6>
-            <p class="text-gray-400 text-[9px]"> @jamesqquick </p>
+            <h6 class="text-white text-sm lg:text-[10px]"> James Q Quick</h6>
+            <p class="text-gray-400 text-xs lg:text-[9px]"> @jamesqquick </p>
           </div>
         </div>
       </div>
   
       <!-- Box-3 -->
-        <div class="bg-[#212121] px-10 py-10 rounded-2xl"> 
+        <div class="bg-[#212121] px-5 py-5 lg:block lg:px-10 lg:py-10 rounded-2xl"> 
         <p class="text-white text-xs"> 
           Absolutely love Reweb! Such a game- <br>
           changer for building beautiful landing <br>
@@ -140,8 +183,8 @@
         <div class="flex flex-row mt-10 gap-5 items-center">
           <img src="/asset/Image [rounded-full] (2).png" class="w-auto h-[1.5rem]" alt="">
           <div class="flex flex-col">
-            <h6 class="text-white text-[10px]"> Wayne</h6>
-            <p class="text-gray-400 text-[9px]"> @wayne-dev </p>
+            <h6 class="text-white text-sm lg:text-[10px]"> Wayne</h6>
+            <p class="text-gray-400 text-xs lg:text-[9px]"> @wayne-dev </p>
           </div>
         </div>
       </div>
@@ -157,15 +200,15 @@
         <div class="flex flex-row mt-10 gap-5 items-center">
           <img src="/asset/Image [rounded-full] (4).png" class="w-auto h-[1.5rem]" alt="">
           <div class="flex flex-col">
-            <h6 class="text-white text-[10px]"> Shadcn</h6>
-            <p class="text-gray-400 text-[9px]"> @shadcn </p>
+            <h6 class="text-white text-sm lg:text-[10px]"> Shadcn</h6>
+            <p class="text-gray-400 text-xs lg:text-[9px]"> @shadcn </p>
           </div>
         </div>
       </div>
   
       <!-- Box-2 -->
       <div class="bg-[#212121] px-10 py-10 rounded-2xl"> 
-        <p class="text-white text-xs"> 
+        <p class="text-white w-[12rem] text-xs"> 
           This is awesome. Better than <br>
           Framer/Wordpress as you can take the <br>
           code and continue working on it instantly <br>
@@ -175,8 +218,8 @@
         <div class="flex flex-row mt-10 gap-5 items-center">
           <img src="/asset/Image [rounded-full] (5).png" class="w-auto h-[1.5rem]" alt="">
           <div class="flex flex-col">
-            <h6 class="text-white text-[10px]"> Soumya dot dev </h6>
-            <p class="text-gray-400 text-[9px]"> @geekysrm </p>
+            <h6 class="text-white text-sm lg:text-[10px]"> Soumya dot dev </h6>
+            <p class="text-gray-400 text-xs lg:text-[9px]"> @geekysrm </p>
           </div>
         </div>
       </div>
@@ -192,8 +235,8 @@
         <div class="flex flex-row mt-10 gap-5 items-center">
           <img src="/asset/Image [rounded-full].png" class="w-auto h-[1.5rem]" alt="">
           <div class="flex flex-col">
-            <h6 class="text-white text-[10px]"> Mike Knapp </h6>
-            <p class="text-gray-400 text-[9px]"> @mikee </p>
+            <h6 class="text-white text-sm lg:text-[10px]"> Mike Knapp </h6>
+            <p class="text-gray-400 text-xs lg:text-[9px]"> @mikee </p>
           </div>
         </div>
       </div>
@@ -212,8 +255,8 @@
         <div class="flex flex-row mt-10 gap-5 items-center">
           <img src="/asset/Image [rounded-full] (6).png" class="w-auto h-[1.5rem]" alt="">
           <div class="flex flex-col">
-            <h6 class="text-white text-[10px]"> Ninjanordbho</h6>
-            <p class="text-gray-400 text-[9px]"> @ninja </p>
+            <h6 class="text-white text-sm lg:text-[10px]"> Ninjanordbho</h6>
+            <p class="text-gray-400 text-xs lg:text-[9px]"> @ninja </p>
           </div>
         </div>
       </div>
@@ -227,8 +270,8 @@
         <div class="flex flex-row mt-10 gap-5 items-center">
           <img src="/asset/Image [rounded-full] (7).png" class="w-auto h-[1.5rem]" alt="">
           <div class="flex flex-col">
-            <h6 class="text-white text-[10px]"> Kabir Asani</h6>
-            <p class="text-gray-400 text-[9px]"> @only_one_asani </p>
+            <h6 class="text-white text-sm lg:text-[10px]"> Kabir Asani</h6>
+            <p class="text-gray-400 text-xs lg:text-[9px]"> @only_one_asani </p>
           </div>
         </div>
       </div>
@@ -243,8 +286,8 @@
         <div class="flex flex-row mt-10 gap-5 items-center">
           <img src="/asset//Image [rounded-full] (8).png" class="w-auto h-[1.5rem]" alt="">
           <div class="flex flex-col">
-            <h6 class="text-white text-[10px]"> Paul Bratslavsky </h6>
-            <p class="text-gray-400 text-[9px]"> @codingthirty </p>
+            <h6 class="text-white text-sm  lg:text-[10px]"> Paul Bratslavsky </h6>
+            <p class="text-gray-400 text-xs lg:text-[9px]"> @codingthirty </p>
           </div>
         </div>
       </div>
@@ -254,57 +297,57 @@
    <!-- FAQ -->
     <div>
       <h1 class="mt-40 text-center text-white text-4xl"> FAQ </h1>
-      <p class="mt-10 text-center text-gray-400 text-sm"> Got other questions? Reach out to our Discord. </p>
+      <p class="mt-3 lg:mt-10 text-center text-gray-400 text-sm"> Got other questions? Reach out to our Discord. </p>
 
       <!-- Questions -->
        <div class="flex flex-col items-center   ">
-          <div class="flex gap-5 items-center mt-10 h-[3rem] w-[40rem] rounded-[12px] bg-[#212121]"> 
-            <img src="/asset/Div [flex] (1).png" class="h-[1.5rem] ml-10">
-            <p class="text-white text-sm"> How is Reweb different than tools like Framer or Webflow?</p>
+          <div class="flex gap-2 lg:gap-5 items-center mt-10 h-[2rem] w-[20rem]  rounded-[6px] lg:h-[3rem] lg:w-[40rem] lg:rounded-[12px] bg-[#212121]"> 
+            <img src="/asset/Div [flex] (1).png" class="h-[0.8rem] ml-3 lg:h-[1.5rem]  lg:ml-10">
+            <p class="text-white text-[10px] lg:text-sm"> How is Reweb different than tools like Framer or Webflow?</p>
           </div>
 
-          <div class="flex gap-5 items-center mt-3 h-[3rem] w-[40rem] rounded-[12px] bg-[#212121]"> 
-            <img src="/asset/Div [flex] (1).png" class="h-[1.5rem] ml-10">
-            <p class="text-white text-sm"> What is the learning curve for Reweb?</p>
+          <div class="flex gap-2 lg:gap-5 items-center mt-3 h-[2rem] w-[20rem] rounded-[6px] lg:h-[3rem] lg:w-[40rem] lg:rounded-[12px] bg-[#212121]"> 
+            <img src="/asset/Div [flex] (1).png" class="h-[0.8rem] ml-3 lg:h-[1.5rem] lg:ml-10">
+            <p class="text-white text-[10px] lg:text-sm"> What is the learning curve for Reweb?</p>
           </div>
 
-          <div class="flex gap-5 items-center mt-3 h-[3rem] w-[40rem] rounded-[12px] bg-[#212121]"> 
-            <img src="/asset/Div [flex] (1).png" class="h-[1.5rem] ml-10">
-            <p class="text-white text-sm"> Is the generated code High quality?</p>
+          <div class="flex gap-2 lg:gap-5 items-center mt-3 h-[2rem] w-[20rem] rounded-[6px] lg:h-[3rem] lg:w-[40rem] lg:rounded-[12px] bg-[#212121]"> 
+            <img src="/asset/Div [flex] (1).png" class="h-[0.8rem] ml-3 lg:h-[1.5rem] lg:ml-10">
+            <p class="text-white text-[10px] lg:text-sm"> Is the generated code High quality?</p>
           </div>
 
-          <div class="flex gap-5 items-center mt-3 h-[3rem] w-[40rem] rounded-[12px] bg-[#212121]"> 
-            <img src="/asset/Div [flex] (1).png" class="h-[1.5rem] ml-10">
-            <p class="text-white text-sm"> Do you plan to add more sections and templates?</p>
+          <div class="flex gap-2 lg:gap-5 items-center mt-3 h-[2rem] w-[20rem] rounded-[6px] lg:h-[3rem] lg:w-[40rem] lg:rounded-[12px] bg-[#212121]"> 
+            <img src="/asset/Div [flex] (1).png" class="h-[0.8rem] ml-3 lg:h-[1.5rem] lg:ml-10">
+            <p class="text-white text-xs lg:text-sm"> Do you plan to add more sections and templates?</p>
           </div>
 
-          <div class="flex gap-5 items-center mt-3 h-[3rem] w-[40rem] rounded-[12px] bg-[#212121]"> 
-            <img src="/asset/Div [flex] (1).png" class="h-[1.5rem] ml-10">
-            <p class="text-white text-sm"> Can i import my own component?</p>
+          <div class="flex gap-2 lg:gap-5 items-center mt-3 h-[2rem] w-[20rem] rounded-[6px] lg:h-[3rem] lg:w-[40rem] lg:rounded-[12px] bg-[#212121]"> 
+            <img src="/asset/Div [flex] (1).png" class="h-[0.8rem] ml-3 lg:h-[1.5rem] lg:ml-10">
+            <p class="text-white text-xs lg:text-sm"> Can i import my own component?</p>
           </div>
        </div>
     </div>
 
     <!-- Footer -->
-     <div class="text-white text-4xl text-center mt-40 font-[600]"> Code at the speed of no-code </div>
-     <p class="text-sm text-gray-400 text-center mt-10"> Build websites at the speed of no-code. Export a Next.js, Tailwind <br>
+     <div class="text-white text-[20px] lg:text-4xl text-center mt-20 lg:mt-40 font-[600]"> Code at the speed of no-code </div>
+     <p class="text-[10px] lg:text-sm text-gray-400 text-center mt-4 lg:mt-10"> Build websites at the speed of no-code. Export a Next.js, Tailwind <br>
       and Shadcn UI app. Customize without limits.</p>
-      <button class="bg-gradient-to-b from-[#9C99FF] to-[#7370FF] block mx-auto mt-10 text-white px-[1.8rem] pt-[0.7rem] pb-[0.8rem] text-center rounded-xl"> Build your site > </button>
-    <div class="flex justify-between mt-10 ml-[8rem] mr-[8rem]">
+      <button class="bg-gradient-to-b from-[#9C99FF] to-[#7370FF] block mx-auto mt-10 text-white px-[1.2rem] pt-[0.6rem] pb-[0.6rem] text-center rounded-xl"> Build your site > </button>
+    <div class="flex justify-between mt-[4rem] ml-[1rem] mr-[1rem] lg:mt-10 lg:ml-[8rem] lg:mr-[8rem]">
       <div class="flex flex-col  gap-3">
-        <img src="/asset/Div [flex].png" class=" w-[5rem]">
-        <p class="text-[12px] text-gray-400 pt-2"> code at the speed of no-code. </p>
-        <img src="/asset/Div [mt-4].png" class="h-[1rem] w-auto mt-3">
+        <img src="/asset/Div [flex].png" class="w-[3.75rem] lg:w-[5rem]">
+        <p class="text-[10px] lg:text-[12px] text-gray-400 pt-2"> code at the speed of no-code. </p>
+        <img src="/asset/Div [mt-4].png" class="h-[0.75] lg:h-[1rem] w-auto mt-3">
       </div>
       <div class="flex gap-10">
-        <div class="flex flex-col gap-3 text-[12px] text-gray-400">
-          <p class="text-white text-sm"> Community </p>
+        <div class="flex flex-col gap-3 text-[10px] lg:text-[12px] text-gray-400">
+          <p class="text-white text-xs lg:text-sm"> Community </p>
           <p> Discord</p>
           <p> Email </p>
         </div>
 
-        <div class="flex flex-col gap-3 text-[12px] text-gray-400 pb-10">
-          <p class="text-white text-sm"> Legal </p>
+        <div class="flex flex-col gap-3 text-[10px] lg:text-[12px] text-gray-400 pb-10">
+          <p class="text-white text-xs lg:text-sm"> Legal </p>
           <p> Terms of service</p>
           <p> Privacy Policy </p>
         </div>

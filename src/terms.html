@@ -7,7 +7,7 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 <body class="bg-black">
-    <nav class="w-[100%] bg-black flex flex-row justify-between pl-[120px] pt-[30px] px-[8rem] p-[20px]">
+    <!-- <nav class="w-[100%] bg-black flex flex-row justify-between pl-[120px] pt-[30px] px-[8rem] p-[20px]">
         <a href="index.html"> <img src="/asset/Div [flex].png" alt="" class="w-[5rem]"></a>
         <div class="flex flex-row gap-[2rem] justify-center items-center">
             <a href="pricing.html" class=" text-gray-700 hover:border-b border-b-white cursor-pointer hover:text-white hover:animate-pulse" > Community </a>
@@ -16,12 +16,52 @@
             <a href="login.html" class="bg-white text-black px-[1.2rem] py-[0.5rem] text-center text-sm rounded-xl hover:bg-gradient-to-b from-indigo-600 to-indigo-900 hover:text-amber-300"> Log-in </a>
             <button class="bg-gradient-to-b from-indigo-600 to-indigo-900 text-white px-[1.2rem] py-[0.5rem] text-center rounded-xl hover:bg-gradient-to-b hover:from-purple-600 hover:to-indigo-800 hover:text-amber-300"> Get started </button>
         </div>
+    </nav> -->
+
+    <nav class="bg-black lg:px-32 md:px-16 lg:py-4 px-2 pl-8 pr-8 flex lg:flex-row justify-between items-center">
+        <a href="index.html">
+            <img src="/asset/Div [flex].png" alt="" class="w-14 lg:w-20 pt-5">
+        </a>
+        <div class="lg:hidden">
+            <button id="menu-btn" class="text-white pt-5">
+                <!-- Menu Icon -->
+                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Close Icon -->
+                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div id="nav-links" class="hidden flex-col  gap-10 absolute top-16 left-0 right-0 bottom-0 w-full bg-black pt-8 pb-8 pr-4 pl-4 lg:static lg:flex lg:flex-row lg:gap-8 lg:bg-transparent lg:w-auto lg:py-0">
+           <div class="flex lg:flex-row flex-col lg:gap-10 gap-20 items-center z-100">
+            <a href="pricing.html" class="text-white hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]">Community</a>
+            <a href="terms.html" class="text-white hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]"> Roadmap</a>
+            <a href="pricing.html" class="text-white hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]"> Pricing </a>
+            <a href="login.html" class="bg-white text-black lg:px-4 lg:py-2 px-10 py-2 text-center text-[12px] lg:text-sm rounded-md hover:bg-gradient-to-b from-indigo-600 to-indigo-900 hover:text-amber-300">Log-in</a>
+            <a href="login.html" class="bg-gradient-to-b from-indigo-600 to-indigo-900 text-white lg:px-4 px-6.5 py-2 text-center text-[12px] lg:text-sm rounded-md hover:bg-gradient-to-b hover:from-purple-600 hover:to-indigo-800 hover:text-amber-300">Get started</a>
+           </div>
+        </div>
     </nav>
+    
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        const navLinks = document.getElementById('nav-links');
+    
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+    </script>
 
     <div class="flex justify-center">
-        <div class="text-justify pl-[8rem] pr-[8rem]">
-            <h1 class="text-white text-4xl mt-[60px] text-center"> Terms of Service </h1>
-            <p class="text-white text-sm text-left mt-10 font-light"> Reweb (“The Company”) is granting access to the Reweb product (“The Product”) to you as the <br>
+        <div class="text-justify lg:pl-[8rem] lg:pr-[8rem] pr-[2rem] px-[2rem]">
+            <h1 class="text-white text-4xl font-semibold mt-[60px] text-center"> Terms of Service </h1>
+            <p class="text-white text-[12px] text-left mt-10 font-light"> Reweb (“The Company”) is granting access to the Reweb product (“The Product”) to you as the <br>
                 individual, company, or legal entity (“The Customer”) on the condition that you accept all of the <br>
                 terms of this (“Terms of Service”, “TOS”) as defined below. This TOS constitutes a legal and <br>
                 enforceable contract between The Customer and The Company. By using Reweb and related <br>
@@ -30,20 +70,20 @@
             </p>
 
             <h4 class="text-white text-[15px] mt-5 font-semibold"> Ownership of platform </h4>
-            <p class="text-white text-sm text-left mt-2 font-light"> 
+            <p class="text-white text-[12px] text-left mt-2 font-light"> 
                 The Customer acknowledges that the Reweb platform is an product and use of The Product <br>
                 does not convey any rights to intellectual property of the platform itself.
             </p>
 
             <h4 class="text-white text-[15px] mt-5 font-semibold"> Data Privacy </h4>   
-            <p class="text-white text-sm text-left mt-2 font-light"> 
+            <p class="text-white text-[12px] text-left mt-2 font-light"> 
                 By engaging with The Product, The Customer consents to Reweb storing account information <br>
                 on their behalf. Reweb is compliant with GDPR regulatory requirements. If you intend to initiate <br> 
                 a Right of Access Request please contact our team at the following email mattia@reweb.so.
             </p>  
             
             <h4 class="text-white text-[15px] mt-5 font-semibold"> Governing Law and Jurisdiction </h4>
-            <p class="text-white text-sm text-left mt-2 font-light"> 
+            <p class="text-white text-[12px] text-left mt-2 font-light"> 
                 The governing jurisdiction for this contract is Estonia. Each Party agrees to the applicable 
                 <br> governing law below without regard to choice or conflicts of law rules, and to the exclusive 
                 <br> jurisdiction of the applicable courts below with respect to any dispute, claim, action, suit or 
@@ -54,7 +94,7 @@
             </p>
 
             <h4 class="text-white text-[15px] mt-5 font-semibold"> Waiver </h4>
-            <p class="text-white text-sm text-left mt-2 font-light">
+            <p class="text-white text-[12px] text-left mt-2 font-light">
                 The Customer agrees that neither they, nor any person, organization, or any other entity acting 
                 <br> on his behalf will file, charge, claim, sue Reweb or permit to be filed, charged or claimed, any 
                 <br> action for damages or other relief (including injunctive, declaratory, monetary relief or other) 
@@ -66,20 +106,20 @@
         </div>
     </div>
 
-    <div class="flex justify-between mt-40 ml-[8rem] mr-[8rem]">
+    <div class="flex justify-between mt-40 lg:ml-[8rem] lg:mr-[8rem] ml-[1rem] mr-[1rem]">
         <div class="flex flex-col  gap-3">
-          <img src="/asset/Div [flex].png" class=" w-[5rem]">
-          <p class="text-[12px] text-gray-400 pt-2"> code at the speed of no-code. </p>
-          <img src="/asset/Div [mt-4].png" class="h-[1rem] w-auto mt-3">
+          <img src="/asset/Div [flex].png" class="w-[4rem] lg:w-[5rem]">
+          <p class="text-[12px] text-gray-400 w-[5rem] pt-2"> code at the speed of no-code. </p>
+          <img src="/asset/Div [mt-4].png" class="lg:h-[1rem] h-[0.75rem] pb-10 w-auto mt-3">
         </div>
         <div class="flex gap-10">
-          <div class="flex flex-col gap-3 text-[12px] text-gray-400">
+          <div class="flex flex-col gap-3 text-[10px] text-gray-400">
             <p class="text-white text-sm"> Community </p>
             <p> Discord</p>
             <p> Email </p>
           </div>
   
-          <div class="flex flex-col gap-3 text-[12px] text-gray-400 pb-10">
+          <div class="flex flex-col gap-3 text-[10px] text-gray-400 pb-10">
             <p class="text-white text-sm"> Legal </p>
             <p> Terms of service</p>
             <p> Privacy Policy </p>

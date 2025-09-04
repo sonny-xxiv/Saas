@@ -19,12 +19,11 @@
             <a href="terms.html" class="bg-gradient-to-b from-indigo-600 to-indigo-900 text-white px-[1rem] py-[0.4rem] lg:px-[1.2rem] lg:py-[0.5rem] text-center rounded-[5px] lg:rounded-xl lg:text-sm text-[10px] hover:bg-gradient-to-b hover:from-purple-600 hover:to-indigo-800 hover:text-amber-300"> Get started </a>
         </div> -->
     <!-- </nav>  --> -->
-
-    <nav class="bg-black lg:px-32 md:px-16 lg:py-4 px-2 pl-8 pr-8 flex lg:flex-row justify-between items-center">
+    <nav class="bg-black lg:px-32 md:px-16 lg:py-4 px-2 pl-8 pr-8 flex md:flex-row lg:flex-row justify-between md:items-center lg:items-center">
         <a href="index.html">
-            <img src="/asset/Div [flex].png" alt="" class="w-14 lg:w-20 pt-5">
+            <img src="/asset/Div [flex].png" alt="" class="w-20 lg:w-25 pt-5 md:pt-0">
         </a>
-        <div class="lg:hidden">
+        <div class="lg:hidden md:hidden">
             <button id="menu-btn" class="text-white pt-5">
                 <!-- Menu Icon -->
                 <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -36,16 +35,16 @@
                 </svg>
             </button>
         </div>
-        <div id="nav-links" class="hidden flex-col  gap-10 absolute top-16 left-0 right-0 bottom-0 w-full bg-black pt-8 pb-8 pr-4 pl-4 lg:static lg:flex lg:flex-row lg:gap-8 lg:bg-transparent lg:w-auto lg:py-0">
-           <div class="flex lg:flex-row flex-col lg:gap-10 gap-20 items-center z-100">
-            <a href="pricing.html" class="text-white hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]">Community</a>
-            <a href="terms.html" class="text-white hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]"> Roadmap</a>
-            <a href="pricing.html" class="text-white hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]"> Pricing </a>
+        <div id="nav-links" class="hidden flex-col  gap-10 absolute top-16 right-8 bottom-0 h-[55vh] w-[50%] lg:h-auto bg-zinc-950 md:bg-transparent pt-8 pb-8 pr-4 pl-4 rounded-2xl lg:static lg:flex lg:flex-row lg:gap-8 lg:bg-transparent lg:w-auto lg:py-0 md:flex md:flex-row md:gap-8 md:static md:w-auto md:h-auto items-center">
+           <div class="flex lg:flex-row flex-col md:flex-row lg:gap-10 md:gap-6 gap-10 items-center">
+            <a href="pricing.html" class= "text-white  hover:text-amber-400 hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]">Community</a>
+            <a href="terms.html" class="text-white hover:text-amber-400 hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]">Roadmap</a>
+            <a href="pricing.html" class="text-white hover:text-amber-400 hover:border-b border-b-white cursor-pointer lg:text-[16px] text-[12px]">Pricing</a>
             <a href="login.html" class="bg-white text-black lg:px-4 lg:py-2 px-10 py-2 text-center text-[12px] lg:text-sm rounded-md hover:bg-gradient-to-b from-indigo-600 to-indigo-900 hover:text-amber-300">Log-in</a>
-            <a href="login.html" class="bg-gradient-to-b from-indigo-600 to-indigo-900 text-white lg:px-4 px-6.5 py-2 text-center text-[12px] lg:text-sm rounded-md hover:bg-gradient-to-b hover:from-purple-600 hover:to-indigo-800 hover:text-amber-300">Get started</a>
+            <a href="login.html" class="bg-gradient-to-b from-indigo-600 to-indigo-900 text-white lg:px-4 px-6 py-2 text-center text-[12px] lg:text-sm rounded-md hover:bg-gradient-to-b hover:from-purple-600 hover:to-indigo-800 hover:text-amber-300">Get started</a>
            </div>
         </div>
-    </nav>
+      </nav>
     
     <script>
         const menuBtn = document.getElementById('menu-btn');
@@ -73,29 +72,29 @@
     </div>
 
     <!-- Payment -->
-     <div class="lg:flex lg:flex-row lg:justify-center lg:gap-5 ml-7 mt-20">
-        <div class="bg-[#212121] p-7 pr-[30px] w-80 lg:pl-3 lg:pr-5 lg:pt-3 lg:pb-3.5 rounded-2xl">
+     <div class="lg:flex md:flex lg:flex-row md:flex-row md:justify-center md:gap-4 lg:justify-center lg:gap-5 ml-7 mt-20">
+        <div class="bg-[#212121] p-7 pr-[30px] w-80 md:w-auto lg:pl-3 lg:pr-5 lg:pt-3 lg:pb-3.5 md:p-3.5 rounded-2xl">
             <p class="text-gray-400 text-[15px] "> Monthly </p>
             <p class="text-white text-4xl font-bold mt-3"> $15 <span class="text-[12px] text-gray-400 line-through"> $20 </span></p>
             <p class="text-[12px] text-gray-400 mt-3"> Per Month</p>
-            <button class="bg-gradient-to-b from-[#9C99FF] to-[#7370FF] mt-5 text-white w-60 px-20 py-5 lg:px-[5rem] lg:pt-[0.4rem] text-center rounded-xl"> Try for free </button>
+            <button class="bg-gradient-to-b from-[#9C99FF] to-[#7370FF] mt-5 text-white w-60 px-20 py-5 lg:px-[5rem] lg:pt-[0.4rem] md:px-[4rem] md:py-[0.8rem] md:w-auto text-center text-[12px] rounded-xl"> Try for free </button>
         </div>
-        <div class="bg-[#212121] p-7 pr-[30px] w-80 lg:pl-3 lg:pr-5 lg:pt-3 lg:pb-3.5 mt-5 rounded-2xl">
+        <div class="bg-[#212121] p-7 pr-[30px] w-80 md:w-auto lg:pl-3 lg:pr-5 lg:pt-3 lg:pb-3.5 mt-5 md:p-3.5 md:mt-0 rounded-2xl">
             <p class="text-gray-400 text-[15px] "> Annual </p>
             <p class="text-white text-4xl font-bold mt-3"> $79 <span class="text-[12px] text-gray-400 line-through"> $99 </span></p>
             <p class="text-[12px] text-gray-400 mt-3"> Per year</p>
-            <button class="bg-gradient-to-b from-[#9C99FF] to-[#7370FF] mt-5 text-white w-60 px-20 py-5 lg:px-[5rem] lg:pt-[0.4rem] text-center rounded-xl"> Try for free </button>
+            <button class="bg-gradient-to-b from-[#9C99FF] to-[#7370FF] mt-5 text-white w-60 px-20 py-5 lg:px-[5rem] lg:pt-[0.4rem] md:px-[4rem] md:py-[0.8rem] md:w-auto text-[12px] text-center rounded-xl"> Try for free </button>
         </div>
-        <div class="bg-[#212121] p-7 pr-[30px] w-80 lg:pl-3 lg:pr-5 lg:pt-3 lg:pb-3.5 mt-5 rounded-2xl">
+        <div class="bg-[#212121] p-7 pr-[30px] w-80 md:w-auto lg:pl-3 lg:pr-5 lg:pt-3 lg:pb-3.5 mt-5 md:mt-0 md:p-3.5 rounded-2xl">
             <p class="text-gray-400 text-[15px] "> Lifetime </p>
             <p class="text-white text-4xl font-bold mt-3"> $99 <span class="text-[12px] text-gray-400 line-through"> $149 </span></p>
             <p class="text-[12px] text-gray-400 mt-3"> Pay once, use forever</p>
-            <button class="bg-gradient-to-b from-[#9C99FF] to-[#7370FF]  mt-5 text-white w-60 px-20 py-5 lg:px-[5rem] lg:pt-[0.4rem] text-[12px] text-center rounded-xl"> Try for free </button>
+            <button class="bg-gradient-to-b from-[#9C99FF] to-[#7370FF]  mt-5 text-white w-60 md:w-auto px-20 py-5 lg:px-[5rem] lg:pt-[0.4rem] md:px-[4rem] md:py-[0.8rem] text-[12px] text-center rounded-xl"> Try for free </button>
         </div>
      </div>
     
      <!-- Grid -->
-    <div class="flex lg:flex-row flex-col justify-center ml-[1rem] lg:ml-[8rem] lg:mr-[8rem] mt-15 gap-10">
+    <div class="flex lg:flex-row flex-col md:flex-row justify-center ml-[1rem] lg:ml-[8rem] lg:mr-[8rem] mt-15 gap-10">
         <div class="flex flex-col gap-5">
             <div class="flex gap-3">
                 <img src="/asset/Div [inline-flex].png" class="h-[1.5rem] w-auto">
@@ -145,38 +144,38 @@
         <h1 class="mt-40 text-center text-white font-semibold text-4xl"> FAQ </h1>
         <p class="mt-3 lg:mt-10 text-center text-gray-400 text-sm"> Got other questions? Reach out to our Discord. </p>
   
-        <!-- Questions -->
-         <div class="lg:w-[40%] lg:mx-auto md:w-[75%] ml-3.5 ">
-            <div class="flex lg:gap-2 gap-2 items-center mt-10 h-[2.5rem] lg:h-[3rem] w-[21rem] lg:w-[35rem] text-[10px] rounded-[5px] lg:text-sm lg:rounded-[12px] bg-[#212121]"> 
-              <img src="/asset/Div [flex] (1).png" class="h-[1.5rem] ml-3 lg:ml-10">
-              <p class="text-white text-xs lg:text-sm"> How is Reweb different than tools like Framer?</p>
-            </div>
-  
-            <div class="flex lg:gap-2 gap-2 items-center mt-3 lg:mt-3 h-[2.5rem] lg:h-[3rem] w-[21rem] lg:w-[35rem] text-[10px] rounded-[5px] lg:text-sm lg:rounded-[12px] bg-[#212121]"> 
-              <img src="/asset/Div [flex] (1).png" class="h-[1.5rem] ml-3 lg:ml-10">
-              <p class="text-white text-xs lg:text-sm"> What is the learning curve for Reweb?</p>
-            </div>
-  
-            <div class="flex lg:gap-2 gap-2 items-center mt-3 lg:mt-3 h-[2.5rem] lg:h-[3rem] w-[21rem] lg:w-[35rem] text-[10px] rounded-[5px] lg:text-sm lg:rounded-[12px] bg-[#212121]"> 
-              <img src="/asset/Div [flex] (1).png" class="h-[1.5rem] ml-3 lg:ml-10">
-              <p class="text-white text-xs lg:text-sm"> Is the generated code High quality?</p>
-            </div>
-  
-            <div class="flex lg:gap-2 gap-2 items-center mt-3 lg:mt-3 h-[2.5rem] lg:h-[3rem] w-[21rem] lg:w-[35rem] text-[10px] rounded-[5px] lg:text-sm lg:rounded-[12px] bg-[#212121]"> 
-              <img src="/asset/Div [flex] (1).png" class="h-[1.5rem] ml-3  lg:ml-10">
-              <p class="text-white text-xs lg:text-sm"> Do you plan to add more sections and templates?</p>
-            </div>
-  
-            <div class="flex lg:gap-2 gap-2 items-center mt-3 lg:mt-3 h-[2.5rem] lg:h-[3rem] w-[21rem] lg:w-[35rem] text-[10px] rounded-[5px] lg:text-sm lg:rounded-[12px] bg-[#212121]"> 
-              <img src="/asset/Div [flex] (1).png" class="h-[1.5rem] ml-3 lg:ml-10">
-              <p class="text-white text-xs lg:text-sm"> Can i import my own component?</p>
-            </div>
-         </div>
-      </div>
+     <!-- Questions -->
+     <div class="flex flex-col items-center   ">
+        <div class="flex gap-2 lg:gap-5 md:gap-4 items-center mt-10 h-[2rem] w-[20rem]  rounded-[6px] lg:h-[3rem] md:h-[3rem] lg:w-[40rem] md:w-[35rem] md:rounded-[10px] lg:rounded-[12px] bg-[#212121]"> 
+          <img src="/asset/Div [flex] (1).png" class="h-[0.8rem] ml-3 lg:h-[1.5rem]  lg:ml-10 md:h-[1.5rem] md:ml-10">
+          <p class="text-white text-[10px] lg:text-sm md:text-sm"> How is Reweb different than tools like Framer or Webflow?</p>
+        </div>
+
+        <div class="flex gap-2 lg:gap-5 md:gap-5 items-center mt-3 h-[2rem] w-[20rem] rounded-[6px] lg:h-[3rem] md:h-[3rem] lg:w-[40rem] md:w-[35rem] lg:rounded-[12px] md:rounded-[10px] bg-[#212121]"> 
+          <img src="/asset/Div [flex] (1).png" class="h-[0.8rem] ml-3 lg:h-[1.5rem] md:h-[1.5rem] lg:ml-10 md:ml-10">
+          <p class="text-white text-[10px] lg:text-sm md:text-sm"> What is the learning curve for Reweb?</p>
+        </div>
+
+        <div class="flex gap-2 lg:gap-5 md:gap-5 items-center mt-3 h-[2rem] w-[20rem] rounded-[6px] lg:h-[3rem] md:h-[3rem] lg:w-[40rem] md:w-[35rem] md:rounded-[10px] lg:rounded-[12px] bg-[#212121]"> 
+          <img src="/asset/Div [flex] (1).png" class="h-[0.8rem] ml-3 lg:h-[1.5rem] md:h-[1.5rem] md:ml-10 lg:ml-10">
+          <p class="text-white text-[10px] lg:text-sm md:text-sm"> Is the generated code High quality?</p>
+        </div>
+
+        <div class="flex gap-2 lg:gap-5 md:gap-5 items-center mt-3 h-[2rem] w-[20rem] rounded-[6px] lg:h-[3rem] md:h-[3rem] lg:w-[40rem] md:w-[35rem] md:rounded-[10px] lg:rounded-[12px] bg-[#212121]"> 
+          <img src="/asset/Div [flex] (1).png" class="h-[0.8rem] ml-3 lg:h-[1.5rem] md:h-[1.5rem] md:ml-10 lg:ml-10">
+          <p class="text-white text-xs lg:text-sm md:text-sm"> Do you plan to add more sections and templates?</p>
+        </div>
+
+        <div class="flex gap-2 lg:gap-5 md:gap-5 items-center mt-3 h-[2rem] w-[20rem] rounded-[6px] lg:h-[3rem] md:h-[3rem] lg:w-[40rem] md:w-[35rem] md:rounded-[10px] lg:rounded-[12px] bg-[#212121]"> 
+          <img src="/asset/Div [flex] (1).png" class="h-[0.8rem] ml-3 lg:h-[1.5rem] md:h-[1.5rem] md:ml-10 lg:ml-10">
+          <p class="text-white text-xs lg:text-sm md:text-sm"> Can i import my own component?</p>
+        </div>
+     </div>
+  </div>
   
       <!-- Footer -->
     
-      <div class="flex justify-between mt-40 lg:ml-[8rem] lg:mr-[8rem] ml-5 mr-5">
+      <div class="flex justify-between mt-40 lg:ml-[8rem] md:ml-[5rem] md:mr-[5rem] lg:mr-[8rem] ml-5 mr-5">
         <div class="flex flex-col  gap-3">
           <img src="/asset/Div [flex].png" class="w-[4rem] lg:w-[5rem]">
           <p class="text-[12px] text-gray-400 w-[5rem] pt-2"> code at the speed of no-code. </p>

@@ -345,9 +345,6 @@
   .inline-flex {
     display: inline-flex;
   }
-  .table {
-    display: table;
-  }
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
@@ -450,9 +447,6 @@
   .w-screen {
     width: 100vw;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .rotate-45 {
     rotate: 45deg;
   }
@@ -461,9 +455,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -524,10 +515,6 @@
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-b-orange-400 {
     border-bottom-color: var(--color-orange-400);
@@ -681,9 +668,6 @@
   }
   .px-\[8rem\] {
     padding-inline: 8rem;
-  }
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
   }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
@@ -878,13 +862,6 @@
   }
   .line-through {
     text-decoration-line: line-through;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .hover\:animate-pulse {
     &:hover {
@@ -1640,11 +1617,6 @@
     }
   }
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-gradient-position {
   syntax: "*";
   inherits: false;
@@ -1691,7 +1663,7 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
+@property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
@@ -1704,7 +1676,6 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
       --tw-gradient-via: #0000;
@@ -1715,7 +1686,7 @@
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
+      --tw-border-style: solid;
     }
   }
 }
